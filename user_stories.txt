@@ -22,3 +22,21 @@ Bike            | see_if_bike_is_working
 Docking station | release_bike
 
 [Docking station | released by | Bike | checked by | Person |
+
+
+As a member of the public
+So I can return bikes I've hired
+I want to dock my bike at the docking station
+
+Objects                 Messages
+Bike
+Docking station         dock_bike
+
+
+As a member of the public
+So I can decide whether to use the docking station
+I want to see a bike that has been docked
+
+Objects                 Messages
+Bike
+Docking station         docked?

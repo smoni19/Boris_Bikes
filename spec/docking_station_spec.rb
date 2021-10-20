@@ -9,4 +9,6 @@ describe DockingStation do
     expect(bike).to respond_to(:working?)
   end
 
+  it { is_expected.to respond_to(:docked?) }
+
 end 
