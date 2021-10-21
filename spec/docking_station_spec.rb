@@ -42,4 +42,9 @@ describe DockingStation do
     expect(new_docking_station.capacity).to eq 20
   end
 
+  it 'does not release a broken bike' do
+    test_bike = Bike.new
+    test_bike.working?(false)
+    expect(test_bike.working).to eq false
+  end
 end
