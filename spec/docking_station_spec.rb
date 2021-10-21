@@ -32,4 +32,14 @@ describe DockingStation do
     expect(subject.dock(bike)).to eq bike
   end
 
+  it 'initialising with integer argument changes capacity' do
+    new_docking_station = DockingStation.new(15)
+    expect(new_docking_station.capacity).to eq 15
+  end
+
+  it 'default capacity is set to 20 when no arguments are passed' do
+    new_docking_station = DockingStation.new
+    expect(new_docking_station.capacity).to eq 20
+  end
+
 end
