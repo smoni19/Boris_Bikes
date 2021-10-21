@@ -5,7 +5,8 @@ class DockingStation
     @bike
   end
 
-  def dock(bike)
-    @bike = bike
+  def dock(my_bike)
+    fail 'No capacity at docking station' if @bike
+    @bike = my_bike
   end
 end
